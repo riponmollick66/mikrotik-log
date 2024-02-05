@@ -17,6 +17,7 @@ cp -r /opt/mikrotik-log-main/etc/* /etc/	;
 
 # Download loki & promtail
 #==========#==========#=====
+cd /opt/mikrotik-log-main/
 wget https://github.com/grafana/loki/releases/download/v2.8.2/loki-linux-amd64.zip	;
 wget https://github.com/grafana/loki/releases/download/v2.8.2/promtail-linux-amd64.zip	;
 
