@@ -17,7 +17,6 @@ cp -r /opt/mikrotik-log-main/etc/* /etc/	;
 
 # Download loki & promtail
 #==========#==========#=====
-cd /opt/mikrotik-log-main/
 wget https://github.com/grafana/loki/releases/download/v2.8.2/loki-linux-amd64.zip	;
 wget https://github.com/grafana/loki/releases/download/v2.8.2/promtail-linux-amd64.zip	;
 
@@ -25,8 +24,8 @@ wget https://github.com/grafana/loki/releases/download/v2.8.2/promtail-linux-amd
 #=======#======#=====
 unzip loki-linux-amd64.zip  ;
 unzip promtail-linux-amd64.zip  ;
-mv /opt/mikrotik-log-main/loki-linux-amd64 /etc/loki/loki	;
-mv /opt/mikrotik-log-main/promtail-linux-amd64 /etc/promtail/promtail	;
+mv loki-linux-amd64 /etc/loki/loki	;
+mv promtail-linux-amd64 /etc/promtail/promtail	;
 
 # Load the new service file
 #===========#==========#=====
